@@ -5,6 +5,55 @@
     <meta name="viewport" content="device-width" , initial-scale="1.0" />
     <title>Auth APP-Home</title>
   </head>
+  <style>
+    ul {
+      list-style-type: none;
+    }
+    h1 {
+      font-style: italic;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      text-align: center;
+      font-size: 35px;
+    }
+    p {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 22px;
+    }
+    form {
+      max-width: 300px;
+      padding: 10px;
+      border: 2px solid purple;
+      border-radius: 8px;
+      background-color: orange;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    input,
+    textarea {
+      width: 300px;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid blue;
+      border-radius: 4px;
+    }
+    button {
+      border-color: #339;
+      color: brown;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: blue;
+    }
+    body {
+      background-color: lightskyblue;
+    }
+  </style>
   <body>
     <h1>Auth APP</h1>
 
@@ -16,5 +65,31 @@
         <li><a href="dashboard.html">Dashboard</a></li>
       </ul>
     </nav>
+    <h2>Introduction</h2>
+    <p>
+      Hello dear user, this is a project that I'm currently undertaking at
+      GOMYCODE_KENYA.
+    </p>
+    <p>
+      It's helping me apply the things that I'm learning in the classroom bit by
+      bit. Feel free to reachout and as a question on the contact form below.
+    </p>
+
+    <h3>Contact Me</h3>
+    <form action="/submit" method="post">
+      <label for="name">Your Name</label><br />
+      <input id="name" type="text" name="Your Name" required /><br />
+      <label for="email">Email</label><br />
+      <input id="email" type="email" name="email" required /><br />
+      <label for="message">Message</label><br />
+      <textarea
+        id="message"
+        type="text"
+        name="message"
+        placeholder="Type your message...."
+      ></textarea
+      ><br />
+      <button type="submit">Send</button>
+    </form>
   </body>
 </html>
