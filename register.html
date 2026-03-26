@@ -7,10 +7,59 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <style>
+      ul {
+        list-style-type: none;
+        display: flex;
+        padding: 0px;
+        margin: 0px;
+        gap: 15px;
+      }
+      body {
+        background-color: aqua;
+      }
+      form {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid blueviolet;
+        border-radius: 6px;
+        font-family: "Times New Roman", Times, serif;
+        background-color: blue;
+      }
+      label {
+        display: block;
+        margin-bottom: 6px;
+        font-weight: bold;
+      }
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid wheat;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      button {
+        background-color: blueviolet;
+        color: beige;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+        padding: 12px 20px;
+      }
+      button:hover {
+        background-color: black;
+      }
+    </style>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="login.html">Login</a>
-      <a href="dashboard.html">Dashboard</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+      </ul>
     </nav>
     <br />
 
