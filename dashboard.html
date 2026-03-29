@@ -1,103 +1,588 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width", initial-scale="1.0">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<html lang="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />"
+  <meta charset="UTF-8" />
+  <title>Dashboard</title>
+  <link rel="stylesheet.js" href="style.css" />
   <body>
     <header>
-      <div>
-        <img src="Photo/Uinum.jpg" alt="Profile Picture" class="Profile-Picture"/>
-      <h1>User Dashboard</h1>
+      <div class="profile">
+        <img src="Photo/Uinum.jpg" alt="Profile Photo" />
+      </div>
+      <h1 class="title">Dashboard></h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+      </nav>
+      <div class="search">
+        <form>
+          <input type="text" placeholder="search...." />
+          <button type="button">Search</button>
+        </form>
       </div>
     </header>
-
-    <nav>
-      <ul>
-       <li><a href="index.html">Home</a></li>
-       <li><a href="register.html">Register</a></li> 
-       <li><a href="login.html">Login</a></li> 
-      </ul>
-    </nav><br>
-    </header>
-    
-    <table border="2">
+    <h2>Welcome to the Dashboard</h2>
+    <form>
       <tr>
-        <th>First Name</th>
-        <th>Second Name</th>
-        <th>Username</th>
-        <th>Email</th>
-        <th>Phone Number</th>
-        <th>Role</th>
+        <th><label for="firstName">First Name</label></th>
+        <th>
+          <input
+            id="firstName"
+            type="text"
+            placeholder="e.g. Timothy"
+            required
+          />
+        </th>
+        <th><label for="lastName">Last Name</label></th>
+        <th>
+          <input id="lastName" type="text" placeholder="e.g. Smith" required />
+        </th>
+        <th><label for="username">Username</label></th>
+        <th>
+          <input
+            id="username"
+            type="text"
+            name="Username"
+            placeholder="e.g. TimSmith"
+            required
+          />
+        </th>
+        <th><label for="email">Email</label></th>
+        <th>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="e.g nzukimyles@gmail.com"
+            required
+          />
+        </th>
+        <th><label for="phoneNumber">Phone Number</label></th>
+        <th>
+          <input
+            id="phoneNumber"
+            type="tel"
+            name="phoneNumber"
+            placeholder="e.g. +254712345678"
+            required
+          />
+        </th>
+        <th><label for="role">Role</label></th>
+        <th>
+          <input
+            id="role"
+            type="text"
+            name="role"
+            placeholder="e.g. Admin"
+            required
+          />
+        </th>
       </tr>
       <tr>
-        <th>Timothy</th>
-        <th>Nzuki</th>
-        <th>Myles Uinum</th>
-        <th>nzukimyles89@gmail.com</th>
-        <th>+254 727 911 202</th>
-        <th>Manager</th>
+        <th><label for="firstName">Timothy</label></th>
+        <th>
+          <input
+            id="firstName"
+            type="text"
+            placeholder="e.g. Timothy"
+            required
+          />
+        </th>
+        <th><label for="lastName">Nzuki</label></th>
+        <th>
+          <input id="lastName" type="text" placeholder="e.g. Smith" required />
+        </th>
+        <th><label for="username">NzukiMyles</label></th>
+        <th>
+          <input
+            id="username"
+            type="text"
+            name="Username"
+            placeholder="e.g. TimSmith"
+            required
+          />
+        </th>
+        <th><label for="email">nzukimyles89@gmail.com</label></th>
+        <th>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="e.g nzukimyles@gmail.com"
+            required
+          />
+        </th>
+        <th><label for="phoneNumber">+254 727 911202</label></th>
+        <th>
+          <input
+            id="phoneNumber"
+            type="tel"
+            name="phoneNumber"
+            placeholder="e.g. +254712345678"
+            required
+          />
+        </th>
+        <th><label for="role">Admin</label></th>
+        <th>
+          <input
+            id="role"
+            type="text"
+            name="role"
+            placeholder="e.g. Admin"
+            required
+          />
+        </th>
       </tr>
       <tr>
-        <th>Collins</th>
-        <th>Mathenge</th>
-        <th>Hamid Collo</th>
-        <th>hamidcollo@gmail.com</th>
-        <th>+254 797 611 511</th>
-        <th>Games Captain</th>
+        <th><label for="firstName">Collins</label></th>
+        <th>
+          <input
+            id="firstName"
+            type="text"
+            placeholder="e.g. Timothy"
+            required
+          />
+        </th>
+        <th><label for="lastName">Mathenge</label></th>
+        <th>
+          <input id="lastName" type="text" placeholder="e.g. Smith" required />
+        </th>
+        <th><label for="username">HamidCollo</label></th>
+        <th>
+          <input
+            id="username"
+            type="text"
+            name="Username"
+            placeholder="e.g. TimSmith"
+            required
+          />
+        </th>
+        <th><label for="email">hamidcollo@gmail.com</label></th>
+        <th>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="e.g nzukimyles@gmail.com"
+            required
+          />
+        </th>
+        <th><label for="phoneNumber">+254 712 345 678</label></th>
+        <th>
+          <input
+            id="phoneNumber"
+            type="tel"
+            name="phoneNumber"
+            placeholder="e.g. +254712345678"
+            required
+          />
+        </th>
+        <th><label for="role">MC</label></th>
+        <th>
+          <input
+            id="role"
+            type="text"
+            name="role"
+            placeholder="e.g. Admin"
+            required
+          />
+        </th>
       </tr>
       <tr>
-        <th>Jacob</th>
-        <th>Osiago</th>
-        <th>Dj Demakufu</th>
-        <th>jacobosiogo10@gmail.com</th>
-        <th>+254 735 606 111</th>
-        <th>DJ</th>
+        <th><label for="firstName">Sheilla</label></th>
+        <th>
+          <input
+            id="firstName"
+            type="text"
+            placeholder="e.g. Timothy"
+            required
+          />
+        </th>
+        <th><label for="lastName">Wambui</label></th>
+        <th>
+          <input id="lastName" type="text" placeholder="e.g. Smith" required />
+        </th>
+        <th><label for="username">SheillaWambui</label></th>
+        <th>
+          <input
+            id="username"
+            type="text"
+            name="Username"
+            placeholder="e.g. TimSmith"
+            required
+          />
+        </th>
+        <th><label for="email">sheillawambui@gmail.com</label></th>
+        <th>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="e.g nzukimyles@gmail.com"
+            required
+          />
+        </th>
+        <th><label for="phoneNumber">+254 393 745 756</label></th>
+        <th>
+          <input
+            id="phoneNumber"
+            type="tel"
+            name="phoneNumber"
+            placeholder="e.g. +254712345678"
+            required
+          />
+        </th>
+        <th><label for="role">Singer</label></th>
+        <th>
+          <input
+            id="role"
+            type="text"
+            name="role"
+            placeholder="e.g. Admin"
+            required
+          />
+        </th>
+      </tr>
+      <tr></tr>
+      <tr>
+        <th><label for="firstName">John</label></th>
+        <th>
+          <input
+            id="firstName"
+            type="text"
+            placeholder="e.g. Timothy"
+            required
+          />
+        </th>
+        <th><label for="lastName">Doe</label></th>
+        <th>
+          <input id="lastName" type="text" placeholder="e.g. Smith" required />
+        </th>
+        <th><label for="username">JohnDoe</label></th>
+        <th>
+          <input
+            id="username"
+            type="text"
+            name="Username"
+            placeholder="e.g. TimSmith"
+            required
+          />
+        </th>
+        <th><label for="email">john.doe@gmail.com</label></th>
+        <th>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="e.g nzukimyles@gmail.com"
+            required
+          />
+        </th>
+        <th><label for="phoneNumber">+254 744 345 978</label></th>
+        <th>
+          <input
+            id="phoneNumber"
+            type="tel"
+            name="phoneNumber"
+            placeholder="e.g. +254712345678"
+            required
+          />
+        </th>
+        <th><label for="role">Driver</label></th>
+        <th>
+          <input
+            id="role"
+            type="text"
+            name="role"
+            placeholder="e.g. Admin"
+            required
+          />
+        </th>
+      </tr>
+      <tr></tr>
+      <tr>
+        <th><label for="firstName">Peris</label></th>
+        <th>
+          <input
+            id="firstName"
+            type="text"
+            placeholder="e.g. Timothy"
+            required
+          />
+        </th>
+        <th><label for="lastName">Wambui</label></th>
+        <th>
+          <input id="lastName" type="text" placeholder="e.g. Smith" required />
+        </th>
+        <th><label for="username">PerisWambui</label></th>
+        <th>
+          <input
+            id="username"
+            type="text"
+            name="Username"
+            placeholder="e.g. TimSmith"
+            required
+          />
+        </th>
+        <th><label for="email">periswambui@gmail.com</label></th>
+        <th>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="e.g nzukimyles@gmail.com"
+            required
+          />
+        </th>
+        <th><label for="phoneNumber">+254 717 565 978</label></th>
+        <th>
+          <input
+            id="phoneNumber"
+            type="tel"
+            name="phoneNumber"
+            placeholder="e.g. +254712345678"
+            required
+          />
+        </th>
+        <th><label for="role">Painter</label></th>
+        <th>
+          <input
+            id="role"
+            type="text"
+            name="role"
+            placeholder="e.g. Admin"
+            required
+          />
+        </th>
       </tr>
       <tr>
-        <th>Brennane</th>
-        <th>Maina</th>
-        <th>Kiiru</th>
-        <th>brennanemaina20@gmail.com</th>
-        <th>+254 755 906 567</th>
-        <th>Writer</th>
+        <th><label for="firstName">Lillian</label></th>
+        <th>
+          <input
+            id="firstName"
+            type="text"
+            placeholder="e.g. Timothy"
+            required
+          />
+        </th>
+        <th><label for="lastName">Kagendo</label></th>
+        <th>
+          <input id="lastName" type="text" placeholder="e.g. Smith" required />
+        </th>
+        <th><label for="username">Lilly</label></th>
+        <th>
+          <input
+            id="username"
+            type="text"
+            name="Username"
+            placeholder="e.g. TimSmith"
+            required
+          />
+        </th>
+        <th><label for="email">lillykagendo@gmail.com</label></th>
+        <th>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="e.g nzukimyles@gmail.com"
+            required
+          />
+        </th>
+        <th><label for="phoneNumber">+254 743 162 126</label></th>
+        <th>
+          <input
+            id="phoneNumber"
+            type="tel"
+            name="phoneNumber"
+            placeholder="e.g. +254712345678"
+            required
+          />
+        </th>
+        <th><label for="role">Dancer</label></th>
+        <th>
+          <input
+            id="role"
+            type="text"
+            name="role"
+            placeholder="e.g. Admin"
+            required
+          />
+        </th>
       </tr>
       <tr>
-        <th>Peris</th>
-        <th>Wambui</th>
-        <th>Phillis</th>
-        <th>philliswambui@gmail.com</th>
-        <th>+254 725 686 991</th>
-        <th>Singer</th>
+        <th><label for="firstName">Jacob</label></th>
+        <th>
+          <input
+            id="firstName"
+            type="text"
+            placeholder="e.g. Timothy"
+            required
+          />
+        </th>
+        <th><label for="lastName">Osiogo</label></th>
+        <th>
+          <input id="lastName" type="text" placeholder="e.g. Smith" required />
+        </th>
+        <th><label for="username">DjDemakufu</label></th>
+        <th>
+          <input
+            id="username"
+            type="text"
+            name="Username"
+            placeholder="e.g. TimSmith"
+            required
+          />
+        </th>
+        <th><label for="email">djdemakufu@gmail.com</label></th>
+        <th>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="e.g nzukimyles@gmail.com"
+            required
+          />
+        </th>
+        <th><label for="phoneNumber">+254 712 345 678</label></th>
+        <th>
+          <input
+            id="phoneNumber"
+            type="tel"
+            name="phoneNumber"
+            placeholder="e.g. +254712345678"
+            required
+          />
+        </th>
+        <th><label for="role">DJ</label></th>
+        <th>
+          <input
+            id="role"
+            type="text"
+            name="role"
+            placeholder="e.g. Admin"
+            required
+          />
+        </th>
       </tr>
       <tr>
-        <th>Lillian</th>
-        <th>Kagendo</th>
-        <th>Lilly</th>
-        <th>lillianlilly@gmail.com</th>
-        <th>+254 743 162 021</th>
-        <th>Dancer</th>
+        <th><label for="firstName">David</label></th>
+        <th>
+          <input
+            id="firstName"
+            type="text"
+            placeholder="e.g. Timothy"
+            required
+          />
+        </th>
+        <th><label for="lastName">Mutua</label></th>
+        <th>
+          <input id="lastName" type="text" placeholder="e.g. Smith" required />
+        </th>
+        <th><label for="username">Davii</label></th>
+        <th>
+          <input
+            id="username"
+            type="text"
+            name="Username"
+            placeholder="e.g. TimSmith"
+            required
+          />
+        </th>
+        <th><label for="email">davidmutua@gmail.com</label></th>
+        <th>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="e.g nzukimyles@gmail.com"
+            required
+          />
+        </th>
+        <th><label for="phoneNumber">+254 733 456 789</label></th>
+        <th>
+          <input
+            id="phoneNumber"
+            type="tel"
+            name="phoneNumber"
+            placeholder="e.g. +254712345678"
+            required
+          />
+        </th>
+        <th><label for="role">Technician</label></th>
+        <th>
+          <input
+            id="role"
+            type="text"
+            name="role"
+            placeholder="e.g. Admin"
+            required
+          />
+        </th>
       </tr>
       <tr>
-        <th>Arori</th>
-        <th>Wambua</th>
-        <th>Arori254</th>
-        <th>arorirain@gmail.com</th>
-        <th>+254 777 243 871</th>
-        <th>Photographer</th>
+        <th><label for="firstName">Soniah</label></th>
+        <th>
+          <input
+            id="firstName"
+            type="text"
+            placeholder="e.g. Timothy"
+            required
+          />
+        </th>
+        <th><label for="lastName">Owiti</label></th>
+        <th>
+          <input id="lastName" type="text" placeholder="e.g. Smith" required />
+        </th>
+        <th><label for="username">SoniahOwiti</label></th>
+        <th>
+          <input
+            id="username"
+            type="text"
+            name="Username"
+            placeholder="e.g. TimSmith"
+            required
+          />
+        </th>
+        <th><label for="email">soniahowiti@gmail.com</label></th>
+        <th>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="e.g nzukimyles@gmail.com"
+            required
+          />
+        </th>
+        <th><label for="phoneNumber">+254 743 162 126</label></th>
+        <th>
+          <input
+            id="phoneNumber"
+            type="tel"
+            name="phoneNumber"
+            placeholder="e.g. +254712345678"
+            required
+          />
+        </th>
+        <th><label for="role">Receptionist</label></th>
+        <th>
+          <input
+            id="role"
+            type="text"
+            name="role"
+            placeholder="e.g. Admin"
+            required
+          />
+        </th>
       </tr>
-      <tr>
-        <th>Sharon</th>
-        <th>Chebet</th>
-        <th>Chebii</th>
-        <th>sharonchebii@gmail.com</th>
-        <th>+254 102 458 807</th>
-        <th>Nurse</th>
-      </tr>
-    </table>
-
-    <p><a href="index.html">Logout</a></p>
+      <button type="submit">Submit</button>
+    </form>
+    <footer>
+      <p>&copy; Nzuki Myles 2026. All rights reserved.</p>
+      <a href="mailto:nzukimyles@gmail.com">Contact Me</a>
+    </footer>
   </body>
 </html>
