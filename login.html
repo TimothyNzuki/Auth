@@ -13,9 +13,14 @@
         display: flex;
         align-items: center;
         background-color: chocolate;
-        padding: 8px;
-        color: aliceblue;
-        border-radius: 13px;
+        padding: 6px;
+        color: black;
+        border-radius: 15px;
+      }
+      header .profile img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
       }
       h1 {
         font-family: "Times New Roman", Times, serif;
@@ -25,7 +30,7 @@
       }
       nav ul li a {
         text-decoration: none;
-        color: blue;
+        color: darkblue;
       }
       nav ul li {
         margin-left: 15px;
@@ -69,7 +74,7 @@
         display: flex;
         margin: 0;
         padding: 0;
-        gap: 15px;
+        gap: 20px;
       }
       p {
         font-family: Georgia, "Times New Roman", Times, serif;
@@ -79,9 +84,57 @@
       body {
         background-color: aqua;
       }
+      footer {
+        font-family: "Times New Roman", Times, serif;
+        font-style: italic;
+        align-items: center;
+        display: flex;
+        padding: 6px;
+        background-color: chocolate;
+        border-radius: 15px;
+      }
+      .search form {
+        display: flex;
+        align-items: center;
+      }
+      .search input {
+        padding: 2px;
+        border: 1px solid yellow;
+        border-radius: 20px;
+      }
+      .search button {
+        padding: 5px 10px;
+        border: none;
+        margin-left: 3px;
+        border-radius: 15px;
+        background-color: blueviolet;
+        cursor: pointer;
+        color: white;
+      }
+      .search button:hover {
+        background-color: black;
+      }
+      .search form {
+        display: flex;
+        align-items: center;
+        background-color: blue;
+      }
+      .search input {
+        padding: 5px;
+        border-radius: 10px;
+        border: 1px solid#ccc;
+      }
     </style>
     <header>
-      <h1>Login</h1>
+      <div class="profile">
+        <img
+          src="Photo/Uinum.jpg"
+          alt="Profile Picture"
+          class="profile picture"
+        />
+      </div>
+      <h1 class="title">Login</h1>
+
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -89,6 +142,12 @@
           <li><a href="dashboard.html">Dashboard</a></li>
         </ul>
       </nav>
+      <div class="search">
+        <form>
+          <input type="text" placeholder="search..." />
+          <button type="button">Search</button>
+        </form>
+      </div>
     </header>
     <br /><br />
 
@@ -107,5 +166,10 @@
     </form>
 
     <p>Don't have an account? <a href="register.html">Register here</a></p>
+    <br />
+    <footer>
+      <p>&copy; 2026 Nzuki Myles. All rights reserved.</p>
+      <a href="mailto:nzukimyles89@gmail.com">Contact Me.</a>
+    </footer>
   </body>
 </html>

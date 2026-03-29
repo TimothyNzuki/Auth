@@ -61,9 +61,9 @@
       align-items: center;
       justify-content: space-between;
       background-color: chocolate;
-      padding: 8px;
-      color: aliceblue;
-      border-radius: 13px;
+      padding: 6px;
+      color: black;
+      border-radius: 15px;
     }
     nav ul li a {
       text-decoration: none;
@@ -75,10 +75,49 @@
     nav ul li a:hover {
       text-decoration: underline;
     }
+    footer {
+      font-family: "Times New Roman", Times, serif;
+      font-style: italic;
+      border-radius: 15px;
+      padding: 7px;
+      background-color: chocolate;
+      display: flex;
+      align-items: center;
+    }
+    header .profile img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+    .search form {
+      display: flex;
+      align-items: center;
+      background-color: blue;
+    }
+    .search input {
+      padding: 5px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+    .search button {
+      padding: 5px 10px;
+      border: none;
+      margin-left: 5px;
+      border-radius: 15px;
+      cursor: pointer;
+      background-color: blueviolet;
+      color: white;
+    }
+    .search button:hover {
+      background-color: black;
+    }
   </style>
   <body>
     <header>
-      <h1>Auth APP</h1>
+      <div class="profile">
+        <img src="Photo/Uinum.jpg" alt="Profile Photo" class="profile" />
+      </div>
+      <h1 class="title">Auth APP</h1>
 
       <nav>
         <ul>
@@ -88,6 +127,12 @@
           <li><a href="dashboard.html">Dashboard</a></li>
         </ul>
       </nav>
+      <div class="search">
+        <form>
+          <input type="text" placeholder="search...." />
+          <button type="button">Search</button>
+        </form>
+      </div>
     </header>
     <h2>Introduction</h2>
     <p>
@@ -117,5 +162,10 @@
       ><br />
       <button type="submit">Send</button>
     </form>
+    <br />
+    <footer>
+      <p>&copy; 2026 Nzuki Myles. All rights reserved.</p>
+      <a href="mailto:nzukimyles89@gmail.com">Contact Me.</a>
+    </footer>
   </body>
 </html>
