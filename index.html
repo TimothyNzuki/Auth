@@ -4,115 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="device-width" , initial-scale="1.0" />
     <title>Auth APP-Home</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <style>
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-    }
-    h1 {
-      font-style: italic;
-      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-      font-size: 35px;
-    }
-    p {
-      font-family: Georgia, "Times New Roman", Times, serif;
-      font-size: 22px;
-    }
-    form {
-      max-width: 250px;
-      padding: 20px;
-      border: 2px solid purple;
-      border-radius: 8px;
-      background-color: orange;
-    }
-    label {
-      display: block;
-      margin-bottom: 8px;
-      font-weight: bold;
-    }
-    input,
-    textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-      border: 1px solid blue;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
-    button {
-      border-color: #339;
-      color: brown;
-      padding: 10px 15px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: blue;
-    }
-    body {
-      background-color: lightskyblue;
-    }
-    header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background-color: chocolate;
-      padding: 6px;
-      color: black;
-      border-radius: 15px;
-    }
-    nav ul li a {
-      text-decoration: none;
-      color: #339;
-    }
-    nav ul li {
-      margin-left: 20px;
-    }
-    nav ul li a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      font-family: "Times New Roman", Times, serif;
-      font-style: italic;
-      border-radius: 15px;
-      padding: 7px;
-      background-color: chocolate;
-      display: flex;
-      align-items: center;
-      text-align: center;
-    }
-    header .profile img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-    }
-    .search form {
-      display: flex;
-      align-items: center;
-      background-color: blue;
-    }
-    .search input {
-      padding: 5px;
-      border-radius: 10px;
-      border: 1px solid #ccc;
-    }
-    .search button {
-      padding: 5px 10px;
-      border: none;
-      margin-left: 5px;
-      border-radius: 15px;
-      cursor: pointer;
-      background-color: blueviolet;
-      color: white;
-    }
-    .search button:hover {
-      background-color: black;
-    }
-  </style>
   <body>
     <header>
       <div class="profile">
@@ -146,7 +39,7 @@
     </p>
 
     <h3>Contact Me</h3>
-    <form action="/submit" method="post">
+    <form class="index-form" action="/submit" method="post">
       <label for="name">Your Name</label><br />
       <input id="name" type="text" name="Your Name" required /><br />
       <label for="email">Email</label><br />

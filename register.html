@@ -7,123 +7,6 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <style>
-      nav ul {
-        list-style-type: none;
-        display: flex;
-        padding: 0px;
-        margin: 0px;
-        gap: 20px;
-      }
-      body {
-        background-color: aqua;
-      }
-      form {
-        max-width: 500px;
-        margin: 0 auto;
-        padding: 20px;
-        border: 1px solid blueviolet;
-        border-radius: 6px;
-        font-family: "Times New Roman", Times, serif;
-        background-color: chocolate;
-      }
-      label {
-        display: block;
-        margin-bottom: 6px;
-        font-weight: bold;
-      }
-      input,
-      select,
-      textarea {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 15px;
-        border: 1px solid wheat;
-        border-radius: 4px;
-        box-sizing: border-box;
-      }
-      button {
-        background-color: blueviolet;
-        color: beige;
-        border: none;
-        cursor: pointer;
-        border-radius: 4px;
-        padding: 12px 20px;
-      }
-      button:hover {
-        background-color: black;
-      }
-      header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: chocolate;
-        padding: 6px;
-        color: black;
-        border-radius: 15px;
-      }
-      p {
-        font-family: "Times New Roman", Times, serif;
-        font-size: 28px;
-        font-style: italic;
-      }
-      footer {
-        display: flex;
-        align-items: center;
-        background-color: chocolate;
-        font-family: "Times New Roman", Times, serif;
-        font-style: italic;
-        padding: 6px;
-        border-radius: 15px;
-        text-align: center;
-      }
-      header .profile img {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-      }
-      header .Register {
-        margin: 0 20px;
-        font-size: 40px;
-        font-weight: bold;
-        font-style: italic;
-      }
-      nav ul li a {
-        text-decoration: none;
-        color: blue;
-      }
-      .search form {
-        display: flex;
-        align-items: center;
-        background-color: blue;
-      }
-      .search input {
-        padding: 5px;
-        border: 1px solid#ccc;
-        border-radius: 15px;
-      }
-      .search button {
-        padding: 4px;
-        border: none;
-        margin-left: 5px;
-        border-radius: 20px;
-        cursor: pointer;
-        background-color: blueviolet;
-        color: white;
-      }
-      .search button:hover {
-        background-color: black;
-      }
-      nav ul li a:hover {
-        text-decoration: underline;
-      }
-      h1 {
-        font-family: "Times New Roman", Times, serif;
-        font-weight: bold;
-        font-style: italic;
-        font-size: 40px;
-      }
-    </style>
     <header>
       <div class="profile">
         <img
@@ -151,7 +34,7 @@
     </header>
     <br />
 
-    <form action="index.html" method="get">
+    <form class="register-form" action="index.html" method="get">
       <label for="firstName">First Name</label>
       <input
         id="firstName"
