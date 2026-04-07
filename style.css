@@ -79,7 +79,7 @@ button:hover {
   background-color: black;
 }
 .card {
-  flex: 1 1 200px;
+  flex: 1 1 37.5%;
   border: 1px solid black;
   padding: 15px;
   text-align: center;
@@ -116,6 +116,12 @@ button:hover {
   }
 }
 @media (max-width: 480px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   .card {
     flex: 0 1 100%;
   }
@@ -271,4 +277,8 @@ h2 {
   font-family: "Times New Roman", Times, serif;
   margin-bottom: 15px;
   text-decoration: none;
+}
+.active {
+  color: darkblue;
+  text-decoration: underline;
 }
