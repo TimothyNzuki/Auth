@@ -57,7 +57,7 @@ header .profile img {
   align-items: center;
   background-color: blue;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 body,
 p {
@@ -88,7 +88,6 @@ button:hover {
   border-radius: 10px;
   aspect-ratio: 1/1;
   max-width: 150px;
-  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -186,7 +185,7 @@ th {
   color: white;
 }
 tr:nth-child(even) {
-  background-color: lightblue;
+  background-color: chocolate;
 }
 tr:hover {
   background-color: lightgray;
