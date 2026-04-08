@@ -126,6 +126,12 @@ button:hover {
   font-weight: bold;
   font-family: "Times New Roman", Times, serif;
 }
+@media (max-width: 767px) {
+  .searchform,
+  .nav ul {
+    display: none;
+  }
+}
 /* Responsive Design Tablet */
 @media (min-width: 768px) {
   .card {
