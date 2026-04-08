@@ -127,7 +127,7 @@ button:hover {
   font-family: "Times New Roman", Times, serif;
 }
 /* Responsive Design Mobile */
-@media (max-width: 767px) {
+@media (max-width: 600px) {
   .search,
   .nav ul {
     display: none;
@@ -142,11 +142,19 @@ button:hover {
   .card {
     grid-template-columns: (1fr);
   }
+  .card {
+    aspect-ratio: auto;
+    max-width: 100%;
+  }
 }
 /* Responsive Design Tablet */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 601px) and (max-width: 1024px) {
   .card {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    aspect-ratio: 1/1;
+    height: auto;
   }
   .menu-toggle {
     display: none;
@@ -158,7 +166,7 @@ button:hover {
   }
 }
 /* Responsive Design Desktop */
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .card {
     grid-template-columns: repeat(4, 1fr);
   }
