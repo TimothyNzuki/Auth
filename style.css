@@ -127,7 +127,7 @@ button:hover {
   font-family: "Times New Roman", Times, serif;
 }
 @media (max-width: 767px) {
-  .searchform,
+  .search,
   .nav ul {
     display: none;
   }
