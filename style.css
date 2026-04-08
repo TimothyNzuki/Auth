@@ -131,6 +131,13 @@ button:hover {
   .nav ul {
     display: none;
   }
+  .title {
+    font-size: 20px;
+  }
+  body,
+  p {
+    font-size: 18px;
+  }
 }
 /* Responsive Design Tablet */
 @media (min-width: 768px) {
